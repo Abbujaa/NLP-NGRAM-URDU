@@ -51,7 +51,7 @@ def main():
         tokens = preprocess_text(user_text)
 
         # User defines the value of n
-        n = st.slider("Select the value of n for the n-gram model", min_value=2, max_value=5, value=2)
+        n = st.slider("Select the value of n for the n-gram model", min_value=2, max_value=1000, value=2)
 
         # Build the n-gram model with user-defined n
         ngram_model = build_ngram_model(tokens, n)
